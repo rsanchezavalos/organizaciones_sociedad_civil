@@ -45,6 +45,7 @@ organizaciones <- organizaciones %>%
 domicilios = organizaciones$domicilio_fiscal
 domicilios = paste0(domicilios, ", México")
 infile <- "input"
+
 geocode_vector_process(infile,domicilios)
 geocoded <- readRDS("input_temp_geocoded.rds")
 
@@ -75,8 +76,9 @@ organizaciones %>% count(actividad_o_fin,rfc) %>% ggplot(aes(x=actividad_o_fin,f
 
 #+ labs(fill="Actividad o Fin Autorizado") +xlab("Act") +ylab("number of subjects") 
 
-organizaciones %>% filter(actividad_o_fin!="M") %>% 
-  count(ac,sc,scp,abp,iap,fideicomiso,banco,fundacion,iasp,ibp)%>% View()
+tmp<-organizaciones %>% filter(actividad_o_fin!="M") %>% 
+  count(ac,sc,scp,abp,iap,fideicomiso,banco,fundacion,iasp,ibp)
+knitr::kable(tmp)
 
 organizaciones %>% filter(actividad_o_fin!="M") %>% 
   filter(is.na(ac)==T&is.na(sc)==T&is.na(scp)==T&is.na(abp)==T&is.na(fbp)==T&
