@@ -69,6 +69,11 @@ organizaciones$accuracy <- geocoded$accuracy
 ###################
 # Shameful EDA
 ###################
+organizaciones %>% count(actividad_o_fin,rfc) %>% ggplot(aes(x=actividad_o_fin,fill=actividad_o_fin)) + stat_count() + 
+  xlab("Actividad o Fin Autorizado") + theme(legend.position='none')+ylab("Número de Organizaciones") +
+  ggsave(file="../img/fin_autorizado.png")
+
+#+ labs(fill="Actividad o Fin Autorizado") +xlab("Act") +ylab("number of subjects") 
 
 organizaciones %>% filter(actividad_o_fin!="M") %>% 
   count(ac,sc,scp,abp,iap,fideicomiso,banco,fundacion,iasp,ibp)%>% View()

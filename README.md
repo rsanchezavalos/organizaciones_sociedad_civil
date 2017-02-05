@@ -4,17 +4,18 @@ INEGI define a las Instituciones Sin Fines de Lucro como organizaciones sociales
 
 ![Formas de organización de la sociedad civil](./img/formas_asc.png)
 
+
+
 Existen una variedad de términos utilizados para este tipo de organizaciones, como el término ONG, institución sin fines de lucro, organización del tercer sector, organización de la sociedad civil.  Así también existe una variedad de figuras legales y marco normativo que las rigen. 
 
 ## Figuras legales
-Categoría con marco normativo diferente
-- ac
-- sc 
-- scp
-- fbp
-- iap
-- ibp
-- fideicomiso
+- AC
+- SC
+- SCP
+- FBP
+- IAP
+- IBP
+- Fideicomiso
 
 ## Marco Normatico
 ### Internacional
@@ -67,7 +68,7 @@ El SAT organiza a las Donatarias Autorizadas de la siguiente manera:
 - L. Organizaciones civiles y fideicomisos de desarrollo social (artículo 79, fracción XXV de la Ley del ISR)
 - M. Organizaciones civiles y fideicomisos autorizados para recibir donativos deducibles en los términos del Convenio para Evitar
 
-
+![Organizaciones por Actividad o Fin Autorizado](./img/fin_autorizado.png)
 
 
 ### Fuentes
