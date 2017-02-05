@@ -1,6 +1,6 @@
 # Proyecto de Análisis de Sociedad Civil en México
 
-![Formas de organización de la sociedad civil](../img/formas_asc.png)
+![Formas de organización de la sociedad civil](./img/formas_asc.png)
 
 
 Según el SAT existen las siguientes Donatarias Autcorizadas
