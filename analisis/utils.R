@@ -1,3 +1,18 @@
+instalar <- function(paquete) {
+  
+  if (!require(paquete,character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)) {
+    install.packages(as.character(paquete), dependecies = TRUE, repos = "http://cran.us.r-project.org")
+    library(paquete, character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)
+  }
+}
+
+paquetes <- c('lubridate', 'magrittr', 'ggvis', 'dplyr', 'tidyr', 'readr', 'rvest',
+              'ggplot2', 'stringr', 'ggthemes', 'googleVis', 'shiny', 'tibble', 'vcd', 'vcdExtra',
+              'GGally','curl','gdata','readxl','ggmap')
+
+lapply(paquetes, instalar);
+
+
 load <- function(con=con,name){
   "Función que descarga si y sólo si no existe un archivo 
     Si no existe, descarga y guarda el archivo."
@@ -29,6 +44,36 @@ remove_empty_rows <- function(db) {
   return(db)
 }
 
+
+geocode_vector_process <- function(infile,vector){   
+
+  #initialise a dataframe to hold the results
+  geocoded <- data.frame()
+  # find out where to start in the address list (if the script was interrupted before):
+  startindex <- 1
+  #if a temp file exists - load it up and count the rows!
+  tempfilename <- paste0(infile, '_temp_geocoded.rds')
+  if (file.exists(tempfilename)){
+    print("Found temp file - resuming from index:")
+    geocoded <- readRDS(tempfilename)
+    startindex <- nrow(geocoded)
+    print(startindex)
+  }
+  
+  # Start the geocoding process - address by address. geocode() function takes care of query speed limit.
+  for (ii in seq(startindex, length(vector))){
+    print(paste("Working on index", ii, "of", length(vector)))
+    #query the google geocoder - this will pause here if we are over the limit.
+    result = getGeoDetails(vector[ii]) 
+    print(result$status)     
+    result$index <- ii
+    #append the answer to the results file.
+    geocoded <- rbind(geocoded, result)
+    #save temporary results as we are going along
+    saveRDS(geocoded, tempfilename)
+  }
+return(geocoded)
+}
 
 
 getGeoDetails <- function(address){   

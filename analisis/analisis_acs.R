@@ -1,15 +1,8 @@
 rm(list=ls())
-suppressPackageStartupMessages({
-  library(stringr)
-  library(tidyverse)
-  require(curl)
-  require(gdata)
-  source("./utils.R")
-  library(readxl)
-})
+source("./utils.R")
 
 ###################
-# Descarga 
+# Download
 ###################
 # Descarga Directorio actualizado del SAT 
 # Obtenido de http://www.sat.gob.mx/terceros_autorizados/donatarias_donaciones/Paginas/directorio_2017.aspx
@@ -17,14 +10,14 @@ con <- "http://www.sat.gob.mx/terceros_autorizados/donatarias_donaciones/Documen
 organizaciones <- load(con,"directorio_donatarias")
 
 ###################
-# Recode
+# Clean/Recode
 ###################
 organizaciones <- clean(organizaciones)
 #summary(organizaciones)
 #glimpse(organizaciones)
 
 ###################
-# Construir Denominaciones Sociales
+# Create Denominaciones Sociales
 ###################
 
 organizaciones <- organizaciones %>% 
@@ -43,9 +36,31 @@ organizaciones <- organizaciones %>%
   mutate(banco = ifelse(str_detect(razon_social,"banco"),1,0)) %>%
   mutate(fundacion = ifelse(str_detect(razon_social,"fundaci[o|ó]n"),1,0))
 
-
 #glimpse(organizaciones)
 #summary(organizaciones)
+
+###################
+# Batch Geocode
+###################
+domicilios = organizaciones$domicilio_fiscal
+domicilios = paste0(domicilios, ", México")
+infile <- "input"
+geocode_vector_process(infile,domicilios)
+geocoded <- readRDS("input_temp_geocoded.rds")
+
+# Add the latitude and longitude to the main data
+organizaciones$lat <- geocoded$lat
+organizaciones$long <- geocoded$lat
+organizaciones$accuracy <- geocoded$accuracy
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,3 +115,4 @@ data %>% count(RFC)
 
 data %>% count(`DENOMINACIÓN O RAZÓN SOCIAL`) %>% arrange(-n)
 
+# https://radishlab.com/2016/09/using-carto-for-creating-data-driven-web-pages/
