@@ -1,9 +1,58 @@
 # Proyecto de Análisis de Sociedad Civil en México
 
+INEGI define a las Instituciones Sin Fines de Lucro como organizaciones sociales no lucrativas por ley o por costumbre que al no perseguir beneficios, no distribuyen los excedentes que pudieran generar; sus decisiones y gestión son institucionalmente autónomas y separadas del gobierno, además de no imponer coercitivamente la participación en ellas (Instituto Nacional de Estadística y Geografía, 2012).
+
 ![Formas de organización de la sociedad civil](./img/formas_asc.png)
 
+Existen una variedad de términos utilizados para este tipo de organizaciones, como el término ONG, institución sin fines de lucro, organización del tercer sector, organización de la sociedad civil.  Así también existe una variedad de figuras legales y marco normativo que las rigen. 
 
-Según el SAT existen las siguientes Donatarias Autcorizadas
+## Figuras legales
+Categoría con marco normativo diferente
+- ac
+- sc 
+- scp
+- fbp
+- iap
+- ibp
+- fideicomiso
+
+## Marco Normatico
+### Internacional
+- Tratados Internacionales (Declaración derechos humanos, Pacto Internacional de derechos civiles, COnvención americana de derechos humanos) Firmados por distintos paises todos reconocen el derecho a la asociación y libre reunión.
+### Local
+- Constitución (Derecho Asociación y Reunión Art 9no - Art 25) y reconoce los tratados 
+- Leyes Federales (Contenidos - Leyes sustantivas) y Generales (Competencias)
+### Por cada figura legal
+#### Sociedades Civiles
+- Código Civil (a.c y Sociedades Civiles)
+- Código civil estatal
+#### IAPS
+Se rigen a nivel local por la ley estatal de instituciones de asistencia privada.
+Como se defina por ese estado
+- Ley de Instituciones de Asistencia privada (IAP) Estatales o su equivalente
+
+#### Fideicomisos
+Figura de derecho financiero, su regulación a nivel federal o local depende de las legislaciones financieras, bancarias y mercantiles. Aunque por su característica de administradora de fondos también se usa para fondos sociales que califican como donataria autorizada. Por esta razón (aunque esté creada para fines lucrativos) entra dentro de la categoría de no lucrativa.
+
+## Estatus Jurídico para no lucrativa.
+
+Lucrativa
+- Persona Moral - Título 2 Ley de ISR 
+- Persona Física - Título 1 Ley de ISR
+No lucrativa 
+- Persona Moral - Título 3 Ley de ISR
+
+
+Estatus para fines de tratamiento fiscal. 
+No está claro a partir del 2014 si las organizaciones que tienen un fin no lucrativo pero no son donatarias tributan en ese título porque ha habido interpretaciones en las que se asume que solo aquellas que tienen la donataria autorizada tributan en ese título.
+
+### Asociaciones Civiles
+### Donatarias Autorizadas
+El título tercero  de la ley del impuesto sobre la renta en su artículo Artículo 79 y 80 regula el tratamiento fiscal preferencial de las organizaciones sin fines de lucro que cumpliendo con los requisitos de la misma ley obtienen el tratamiento de ese estatus.
+Cuya principal ventaja es la excensión del pago del impuesto sobre la renta. Entre las obligaciones que se adquieren con esta figura está la entrega de informes de transparencia, declaraciones fiscales e informes detallados sobre los donantes para efectos de la ley antilavado entre otros.
+
+El SAT organiza a las Donatarias Autorizadas de la siguiente manera:
+
 - A. Organizaciones civiles y fideicomisos asistenciales (artículo 79, fracción VI de la Ley del ISR)
 - B. Organizaciones civiles y fideicomisos educativos (artículo 79, fracción X de la Ley del ISR)
 - C. Organizaciones civiles y fideicomisos para la investigación científica o tecnológica (artículo 79, fracción XI de la Ley del ISR)
@@ -18,15 +67,10 @@ Según el SAT existen las siguientes Donatarias Autcorizadas
 - L. Organizaciones civiles y fideicomisos de desarrollo social (artículo 79, fracción XXV de la Ley del ISR)
 - M. Organizaciones civiles y fideicomisos autorizados para recibir donativos deducibles en los términos del Convenio para Evitar
 
-la Doble Imposición e Impedir la Evasión Fiscal en Materia de Impuesto sobre la Renta, suscrito por el Gobierno de los Estados Unidos
-Mexicanos y el Gobierno de los Estados Unidos de América  (artículo 82 de la Ley del Impuesto sobre la Renta, vigente a partir del 1
-de enero de 2014, antes artículo 70-B y regla 3.10.8. de la Resolución Miscelánea Fiscal para 2016).
-
 
 
 
 ### Fuentes
-Directorio de Donatarias Autorizadas 2016 (publicadas en el D.O.F. el 12 de enero, 09 de mayo y 15 de julio de 2016).
-- Obtenida de http://www.sat.gob.mx/terceros_autorizados/donatarias_donaciones/Documents/dir163.xls
 
-
+- UNA MIRADA A LAS ORGANIZACIONES DE LA SOCIEDAD CIVIL EN MÉXICO. PERTINENCIA DE SU ESTUDIO DESDE LA ADMINISTRACIÓN. Universidad Nacional Autónoma de México. http://congreso.investiga.fca.unam.mx/docs/xviii/docs/16.14.pdf
+- Directorio de Donatarias Autorizadas 2016 (publicadas en el D.O.F. el 12 de enero, 09 de mayo y 15 de julio de 2016). Obtenida de http://www.sat.gob.mx/terceros_autorizados/donatarias_donaciones/Documents/dir163.xls

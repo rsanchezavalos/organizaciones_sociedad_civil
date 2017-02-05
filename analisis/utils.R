@@ -10,7 +10,7 @@ load <- function(con=con,name){
     download.file(con,paste0("./",name,".xls"),mode="wb") 
     system(paste0("ssconvert ./",name,".xls ./",name,".csv"))
     data <- read_csv(paste0("./",name,".csv"),skip = 30)
-    write.csv(data, paste0("./",name,".csv"))
+    write.csv(data, paste0("./",name,".csv"),row.names = FALSE)
     }
   return(data)
 }

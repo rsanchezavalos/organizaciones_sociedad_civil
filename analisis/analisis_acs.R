@@ -43,9 +43,17 @@ organizaciones <- organizaciones %>%
   mutate(banco = ifelse(str_detect(razon_social,"banco"),1,0)) %>%
   mutate(fundacion = ifelse(str_detect(razon_social,"fundaci[o|ó]n"),1,0))
 
+
 #glimpse(organizaciones)
 #summary(organizaciones)
 
+
+
+
+
+###################
+# Shameful EDA
+###################
 
 organizaciones %>% filter(actividad_o_fin!="M") %>% 
   count(ac,sc,scp,abp,iap,fideicomiso,banco,fundacion,iasp,ibp)%>% View()
