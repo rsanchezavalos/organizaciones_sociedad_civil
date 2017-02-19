@@ -17,9 +17,9 @@ Existen una variedad de términos utilizados para este tipo de organizaciones, c
 - IBP
 - Fideicomiso
 
-Una Organización puede tener varias figuras legales, la siguiente tabla describe el número de organizaciones por cada tipo de caso:
+Del análisis de la base de datos una Organización puede tener varias figuras legales, la siguiente tabla describe el número de organizaciones y su correspondencia para cada figura legal:
 
-| ac| sc| scp| abp| iap| fideicomiso| banco| fundacion| iasp| ibp|Número de Organizaciones|
+| AC| SC| SCP| ABP| IAP| Fideicomiso| Banco| Fundación| IASP| IBP|Número de Organizaciones|
 |--:|--:|---:|---:|---:|-----------:|-----:|---------:|----:|---:|----:|
 |  0|  0|   0|   0|   0|           0|     0|         0|    0|   0|   29|
 |  0|  0|   0|   0|   0|           0|     0|         0|    0|   1|   21|

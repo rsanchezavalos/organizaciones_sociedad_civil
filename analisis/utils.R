@@ -1,16 +1,13 @@
-instalar <- function(paquete) {
-  
-  if (!require(paquete,character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)) {
-    install.packages(as.character(paquete), dependecies = TRUE, repos = "http://cran.us.r-project.org")
-    library(paquete, character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)
-  }
-}
-
-paquetes <- c('lubridate', 'magrittr', 'ggvis', 'dplyr', 'tidyr', 'readr', 'rvest',
+.packages = c('lubridate', 'magrittr', 'ggvis', 'dplyr', 'tidyr', 'readr', 'rvest',
               'ggplot2', 'stringr', 'ggthemes', 'googleVis', 'shiny', 'tibble', 'vcd', 'vcdExtra',
               'GGally','curl','gdata','readxl','ggmap')
 
-lapply(paquetes, instalar);
+# Install CRAN packages (if not already installed)
+.inst <- .packages %in% installed.packages()
+if(length(.packages[!.inst]) > 0) install.packages(.packages[!.inst])
+
+# Load packages into session 
+lapply(.packages, require, character.only=TRUE)
 
 
 load <- function(con=con,name){
