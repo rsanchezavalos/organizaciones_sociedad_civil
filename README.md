@@ -106,3 +106,5 @@ El SAT organiza a las Donatarias Autorizadas de la siguiente manera:
 
 - UNA MIRADA A LAS ORGANIZACIONES DE LA SOCIEDAD CIVIL EN MÉXICO. PERTINENCIA DE SU ESTUDIO DESDE LA ADMINISTRACIÓN. Universidad Nacional Autónoma de México. http://congreso.investiga.fca.unam.mx/docs/xviii/docs/16.14.pdf
 - Directorio de Donatarias Autorizadas 2016 (publicadas en el D.O.F. el 12 de enero, 09 de mayo y 15 de julio de 2016). Obtenida de http://www.sat.gob.mx/terceros_autorizados/donatarias_donaciones/Documents/dir163.xls
+
+* Prueba de pull request
